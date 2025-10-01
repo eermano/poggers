@@ -1,0 +1,80 @@
+.receitas-container {
+  padding: 2rem;
+}
+
+.receitas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.receita-item {
+  background-color: #1f1f1f;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.receita-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #2a2a2a;
+}
+
+.receita-item h2 {
+  color: #ff8888;
+  font-size: 1.3em;
+  margin: 0;
+  flex-grow: 1;
+  font-weight: 600;
+}
+
+.recipe-created-at {
+  font-size: 0.85em;
+  color: #aaa;
+  margin: 0;
+}
+
+.receita-actions {
+  display: flex;
+  gap: 10px;
+  margin-left: 1.5rem;
+  flex-shrink: 0;
+}
+
+.view-recipe-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.view-recipe-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-recipe-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: background-color 0.2s ease-in-out;
+  flex-shrink: 0;
+}
+
+.delete-recipe-btn:hover {
+  background-color: #c82333;
+}

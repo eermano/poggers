@@ -1,0 +1,58 @@
+.sidebar {
+  width: 250px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-right: 1px solid #333;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #ff4d4d;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+}
+
+.btn-gerar-receita {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.btn-gerar-receita:hover {
+  background-color: #ff6666;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 10px;
+  color: #ccc;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar-nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
