@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AlimentoController;
+use App\Http\Controllers\ReceitaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('alimentos', AlimentoController::class);
+
+Route::get('receitas/gerar', [ReceitaController::class, 'gerar']);
+Route::get('receitas', [ReceitaController::class, 'index']);
+Route::post('receitas', [ReceitaController::class, 'store']);
+Route::delete('receitas/{receita}', [ReceitaController::class, 'destroy']);
